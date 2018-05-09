@@ -1,4 +1,4 @@
-##Instalation sur Raspberry Pi 3 avec Raspbian Stretch
+## Instalation sur Raspberry Pi 3 avec Raspbian Stretch
 
 	$ git clone https://github.com/quiniouben/vban.git
 	$ cd vban
@@ -7,7 +7,7 @@
 	$ make
 	$ sudo make install
 	
-###Vban-Manager
+### Vban-Manager
 → https://github.com/VBAN-manager/VBAN-manager
 
 	$ sudo apt-get install apache2

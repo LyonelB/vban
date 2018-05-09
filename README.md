@@ -1,3 +1,28 @@
+##Instalation sur Raspberry Pi 3 avec Raspbian Stretch
+
+	$ git clone https://github.com/quiniouben/vban.git
+	$ cd vban
+	$ ./autogen.sh
+	$ ./configure --disable-jack
+	$ make
+	$ sudo make install
+	
+###Vban-Manager
+→ https://github.com/VBAN-manager/VBAN-manager
+
+	$ sudo apt-get install apache2
+	$ sudo chown -R pi:www-data /var/www/html/
+	$ sudo chmod -R 770 /var/www/html/
+	$ sudo apt-get install php php-mbstring
+	$ cd /var/www/html
+	$ git clone https://github.com/VBAN-manager/VBAN-manager.git
+	$ cd
+	$ sudo nano /etc/sudoers.d/mount
+	<et ajoutez "www-data ALL=(ALL:ALL) NOPASSWD:/var/www/html/VBAN-manager/script/vban.sh">
+	
+Ouvrir un navigateur et se rendre à : ip.du.raspberry/VBAN-manger
+
+	
 vban - Linux command-line VBAN tools
 ======================================================
 
